@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Godfather - Movie Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1a1a1a;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background-color: #f5f0e0;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        text-align: center;
+        color: #8b4513;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .content-wrapper {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      .poster-section {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+      }
+      .poster-section img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        border: 3px solid #8b4513;
+      }
+      .table-section {
+        flex: 2;
+        min-width: 400px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        border: 2px solid #8b4513;
+        padding: 12px;
+        vertical-align: top;
+      }
+      th {
+        background-color: #8b4513;
+        color: white;
+        text-align: left;
+        width: 35%;
+      }
+      td {
+        background-color: #fff8dc;
+      }
+      .email-link {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid #8b4513;
+        font-size: 1.1em;
+      }
+      a {
+        color: #8b4513;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .poster-caption {
+        margin-top: 10px;
+        font-style: italic;
+        color: #666;
+      }
+      @media (max-width: 700px) {
+        .content-wrapper {
+          flex-direction: column;
+        }
+        .table-section {
+          min-width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Godfather</h1>
+
+      <div class="content-wrapper">
+        <div class="poster-section">
+          <img
+            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rPdtLWNsZmAtoZl9PK7S2wE3qiS.jpg"
+            alt="The Godfather Movie Poster"
+          />
+          <div class="poster-caption">Official Movie Poster (1972)</div>
+        </div>
+
+        <div class="table-section">
+          <table>
+            <tr>
+              <th>Title</th>
+              <td>The Godfather</td>
+            </tr>
+            <tr>
+              <th>Director</th>
+              <td>Francis Ford Coppola</td>
+            </tr>
+            <tr>
+              <th>Leading Actor</th>
+              <td>Marlon Brando (as Vito Corleone)</td>
+            </tr>
+            <tr>
+              <th>Leading Actress</th>
+              <td>Diane Keaton (as Kay Adams)</td>
+            </tr>
+            <tr>
+              <th>Rating</th>
+              <td>R</td>
+            </tr>
+            <tr>
+              <th>Brief Description</th>
+              <td>
+                The aging patriarch of an organized crime dynasty transfers
+                control of his clandestine empire to his reluctant youngest son.
+              </td>
+            </tr>
+            <tr>
+              <th>Review Link</th>
+              <td>
+                <a
+                  href="https://www.rogerebert.com/reviews/great-movie-the-godfather-1972"
+                  target="_blank"
+                  >Roger Ebert's Review of The Godfather ★★★★★</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="email-link">
+        <a href="mohdAbdu@gmail.com">Click here to email me</a> with your
+        favorite movie suggestions!
+      </div>
+    </div>
+  </body>
+</html>

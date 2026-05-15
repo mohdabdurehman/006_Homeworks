@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unappealing WebPage Analysis - Craigslist.org</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        border-bottom: 3px solid red;
+        padding-bottom: 10px;
+      }
+      .badge {
+        background-color: red;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        vertical-align: top;
+      }
+      th {
+        background-color: #f2f2f2;
+        width: 30%;
+        font-weight: bold;
+      }
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      .improvement-box {
+        background-color: #fff3f3;
+        border-left: 4px solid red;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 15px;
+        border-top: 1px solid #ccc;
+        font-size: 0.85em;
+        color: #666;
+      }
+      a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="badge">❌ UNAPPEALING WEBPAGE</div>
+      <h1>Craigslist.org - WebPage Analysis</h1>
+
+      <table>
+        <tr>
+          <th>a. URL of the website</th>
+          <td>
+            <a href="https://www.craigslist.org" target="_blank"
+              >https://www.craigslist.org</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>b. Does this page use tables? If so, for what purpose?</th>
+          <td>
+            <strong>Yes.</strong> Craigslist uses HTML tables for page layout
+            and organizing classified listings into categories. This is an
+            outdated approach to web design.
+          </td>
+        </tr>
+        <tr>
+          <th>c. Does this page use CSS? If so, for what purpose?</th>
+          <td>
+            <strong>Minimally.</strong> Craigslist uses very basic CSS for:<br />
+            <ul>
+              <li>Link colors (blue for unvisited, purple for visited)</li>
+              <li>Basic font styling (font family, size)</li>
+              <li>Simple background colors for some elements</li>
+            </ul>
+            <strong
+              >It does NOT use CSS for modern layout, responsive design, or
+              visual enhancements.</strong
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>d. Is this page appealing or unappealing? List three reasons.</th>
+          <td>
+            <strong>Unappealing</strong><br /><br />
+            <strong>Reason 1:</strong> Extremely dense, cluttered layout with no
+            visual hierarchy or spacing between elements.<br /><br />
+            <strong>Reason 2:</strong> Outdated design that looks like it hasn't
+            been updated since the 1990s with no modern design elements.<br /><br />
+            <strong>Reason 3:</strong> No images, icons, or visual breaks - just
+            plain blue links on a white background which is visually boring.
+          </td>
+        </tr>
+        <tr>
+          <th>e. If unappealing, what would you do to improve it?</th>
+          <td>
+            <div class="improvement-box">
+              <strong>Three improvements to make this website appealing:</strong
+              ><br /><br />
+              <strong>Improvement 1:</strong> Add whitespace, larger fonts, and
+              better spacing between links to improve readability and reduce
+              visual clutter.<br /><br />
+              <strong>Improvement 2:</strong> Use cards or sections with subtle
+              background colors and borders to visually group content
+              categories.<br /><br />
+              <strong>Improvement 3:</strong> Implement a responsive,
+              mobile-friendly design using CSS Grid or Flexbox instead of
+              table-based layout, and add a navigation menu.
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="footer">
+        <p>Analysis completed for ECC006 Homework Assignment #8</p>
+        <p>© 2026</p>
+      </div>
+    </div>
+  </body>
+</html>
