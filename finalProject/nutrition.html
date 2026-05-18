@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition - Lightweight Fitness</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏋️</text></svg>"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">LIGHT<span>WEIGHT</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="nutrition.html" class="active">Nutrition</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ══ PAGE HERO ════════════════════════════════════════════ -->
+    <div class="page-hero">
+      <p class="section-label" style="position: relative">Fuel Your Engine</p>
+      <h1
+        class="section-title"
+        style="position: relative; font-size: clamp(3rem, 8vw, 6rem)"
+      >
+        Nutrition &<br /><span style="color: var(--accent)">Diet Guide</span>
+      </h1>
+      <div class="divider center"></div>
+      <p class="section-subtitle" style="margin: 0 auto">
+        You can't out-train a bad diet. Everything you eat is either building
+        your body or breaking it down. Choose wisely.
+      </p>
+    </div>
+
+    <!-- ══ MACROS ════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="section-header center">
+        <p class="section-label">The Foundation</p>
+        <h2 class="section-title">Understanding Macronutrients</h2>
+        <div class="divider center"></div>
+        <p class="section-subtitle">
+          Every food you eat is made of three macros. Master these and you
+          master your body composition.
+        </p>
+      </div>
+      <div class="macro-grid">
+        <div class="macro-card protein">
+          <div class="macro-icon">
+            <i class="fa-solid fa-drumstick-bite"></i>
+          </div>
+          <div class="macro-pct">35%</div>
+          <div class="macro-name">Protein</div>
+          <p class="macro-desc">
+            The building block of muscle tissue. Aim for 1.6–2.2g per kg of
+            bodyweight daily. Sources: chicken, eggs, fish, Greek yoghurt, whey,
+            legumes.
+          </p>
+        </div>
+        <div class="macro-card carbs">
+          <div class="macro-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+          <div class="macro-pct">45%</div>
+          <div class="macro-name">Carbohydrates</div>
+          <p class="macro-desc">
+            Your body's primary fuel source. Prioritise complex carbs for
+            sustained energy. Sources: oats, rice, sweet potato, fruit, whole
+            grains.
+          </p>
+        </div>
+        <div class="macro-card fats">
+          <div class="macro-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="macro-pct">20%</div>
+          <div class="macro-name">Healthy Fats</div>
+          <p class="macro-desc">
+            Essential for hormone production, joint health, and vitamin
+            absorption. Sources: avocado, olive oil, nuts, seeds, fatty fish.
+          </p>
+        </div>
+      </div>
+
+      <!-- Calorie explainer -->
+      <div class="cta-banner" style="margin-top: 2rem">
+        <p class="section-label" style="text-align: center">Calorie Math</p>
+        <h2 style="font-size: clamp(1.8rem, 3vw, 2.5rem)">Know Your Numbers</h2>
+        <p style="max-width: 620px; margin: 0 auto 1.5rem">
+          Calculate your Total Daily Energy Expenditure (TDEE) and eat in a
+          slight surplus (+200–300 kcal) to build muscle, or a slight deficit
+          (−300–500 kcal) to lose fat — while keeping protein high to preserve
+          muscle.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <div style="text-align: center">
+            <div
+              style="
+                font-family: var(--font-head);
+                font-size: 2.5rem;
+                color: var(--accent);
+              "
+            >
+              1g
+            </div>
+            <div
+              style="
+                font-size: 0.8rem;
+                color: var(--muted);
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+              "
+            >
+              Protein = 4 kcal
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div
+              style="
+                font-family: var(--font-head);
+                font-size: 2.5rem;
+                color: #3b82f6;
+              "
+            >
+              1g
+            </div>
+            <div
+              style="
+                font-size: 0.8rem;
+                color: var(--muted);
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+              "
+            >
+              Carbs = 4 kcal
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div
+              style="
+                font-family: var(--font-head);
+                font-size: 2.5rem;
+                color: var(--gold);
+              "
+            >
+              1g
+            </div>
+            <div
+              style="
+                font-size: 0.8rem;
+                color: var(--muted);
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+              "
+            >
+              Fat = 9 kcal
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ MEAL PLAN ════════════════════════════════════════════ -->
+    <section class="section section-alt">
+      <div class="section-header center">
+        <p class="section-label">Sample Plan</p>
+        <h2 class="section-title">My Daily Meal Plan</h2>
+        <div class="divider center"></div>
+        <p class="section-subtitle" style="margin: 0 auto">
+          ~2,800 kcal · 185g protein · 320g carbs · 80g fats — calibrated for
+          muscle building at ~80kg bodyweight.
+        </p>
+      </div>
+      <div class="meal-plan-grid">
+        <div class="meal-card">
+          <div class="meal-header">
+            <i class="fa-solid fa-sun"></i>
+            <h3>Breakfast — 7:00 AM (~620 kcal)</h3>
+          </div>
+          <div class="meal-body">
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 100g rolled oats with water or
+              milk
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 4 whole eggs, scrambled
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 1 banana + handful of
+              blueberries
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> Black coffee (no sugar)
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 5g creatine monohydrate
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-card">
+          <div class="meal-header">
+            <i class="fa-solid fa-apple-whole"></i>
+            <h3>Mid-Morning Snack — 10:30 AM (~300 kcal)</h3>
+          </div>
+          <div class="meal-body">
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 200g Greek yoghurt (0% fat)
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 30g whey protein mixed in
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 1 tbsp honey + 20g mixed nuts
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 500ml water
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-card">
+          <div class="meal-header">
+            <i class="fa-solid fa-bowl-food"></i>
+            <h3>Lunch — 1:00 PM (~750 kcal)</h3>
+          </div>
+          <div class="meal-body">
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 200g grilled chicken breast
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 150g cooked brown rice
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> Mixed salad with olive oil
+              dressing
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 1 medium sweet potato (baked)
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 500ml water or green tea
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-card">
+          <div class="meal-header">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Pre-Workout — 4:30 PM (~400 kcal)</h3>
+          </div>
+          <div class="meal-body">
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 2 rice cakes with peanut butter
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 1 scoop whey protein shake
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 1 medium apple or banana
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> Pre-workout supplement
+              (optional)
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 400ml water before session
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-card">
+          <div class="meal-header">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h3>Post-Workout — 7:00 PM (~480 kcal)</h3>
+          </div>
+          <div class="meal-body">
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 40g whey protein shake
+              (fast-absorbing)
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 200g salmon fillet (omega-3
+              rich)
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 120g cooked quinoa or white
+              rice
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> Steamed broccoli & asparagus
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 500ml water
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-card">
+          <div class="meal-header">
+            <i class="fa-solid fa-moon"></i>
+            <h3>Evening Snack — 9:30 PM (~250 kcal)</h3>
+          </div>
+          <div class="meal-body">
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 250g cottage cheese
+              (slow-digesting casein)
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> 1 tbsp almond butter
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> Small handful of walnuts
+            </div>
+            <div class="meal-item">
+              <i class="fa-solid fa-circle"></i> Chamomile or peppermint tea
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TIPS ══════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="section-header">
+        <p class="section-label">Smart Eating</p>
+        <h2 class="section-title">10 Nutrition Tips That Changed Everything</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-item">
+          <div class="tip-num">01</div>
+          <div class="tip-text">
+            <strong>Meal prep on Sundays.</strong> Spending 2 hours cooking on
+            Sunday saves you from making bad food choices all week long. Cook in
+            bulk, store in containers.
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-num">02</div>
+          <div class="tip-text">
+            <strong>Protein at every meal.</strong> Aim to hit 30–40g of protein
+            per meal to maximise muscle protein synthesis throughout the day.
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-num">03</div>
+          <div class="tip-text">
+            <strong>Don't fear carbs.</strong> Carbohydrates are your training
+            fuel. Timing them around your workout — before and after — optimises
+            performance and recovery.
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-num">04</div>
+          <div class="tip-text">
+            <strong>Drink water first.</strong> Often hunger is actually
+            dehydration. Drink 500ml of water when you feel hungry and wait 10
+            minutes before eating.
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-num">05</div>
+          <div class="tip-text">
+            <strong>Track for 30 days.</strong> Use an app like MyFitnessPal for
+            one month to understand your eating habits. You'll be shocked by
+            what you discover.
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-num">06</div>
+          <div class="tip-text">
+            <strong>Eat whole foods first.</strong> 80% of your diet should come
+            from minimally processed, single-ingredient foods. Save the 20% for
+            life and sanity.
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-num">07</div>
+          <div class="tip-text">
+            <strong>Don't skip breakfast.</strong> A high-protein breakfast sets
+            the tone for the whole day and reduces cravings and overeating later
+            on.
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-num">08</div>
+          <div class="tip-text">
+            <strong>Slow down when eating.</strong> It takes 20 minutes for
+            satiety signals to reach your brain. Eating slowly means you eat
+            less without feeling deprived.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">LIGHT<span>WEIGHT</span></a>
+          <p>
+            A personal fitness journey shared with the world. Built on iron,
+            fuelled by passion, powered by discipline.
+          </p>
+          <div class="social-links" style="margin-top: 1.2rem">
+            <a
+              href="https://www.instagram.com/accounts/onetap/"
+              class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@mohammedabdurahman7852"
+              class="social-link"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Workouts</h4>
+          <ul>
+            <li><a href="workouts.html">Chest & Triceps</a></li>
+            <li><a href="workouts.html">Back & Biceps</a></li>
+            <li><a href="workouts.html">Leg Day</a></li>
+            <li><a href="workouts.html">Upper Body</a></li>
+            <li><a href="workouts.html">Lower Body</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nutrition</h4>
+          <ul>
+            <li><a href="nutrition.html">Meal Plans</a></li>
+            <li><a href="nutrition.html">Macros Guide</a></li>
+            <li><a href="nutrition.html">Pre-Workout Meals</a></li>
+            <li><a href="nutrition.html">Healthy Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightweight Fitness. Built with passion &amp; iron.</p>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/accounts/onetap/"
+            class="social-link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@mohammedabdurahman7852"
+            class="social-link"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>

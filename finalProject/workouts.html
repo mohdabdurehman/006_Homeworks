@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workouts — Lightweight Fitness</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏋️</text></svg>"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">LIGHT<span>WEIGHT</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html" class="active">Workouts</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ══ PAGE HERO ════════════════════════════════════════════ -->
+    <div class="page-hero">
+      <p class="section-label" style="position: relative">Training Programs</p>
+      <h1
+        class="section-title"
+        style="position: relative; font-size: clamp(3rem, 8vw, 6rem)"
+      >
+        Workout Routines<br />That
+        <span style="color: var(--accent)">Actually Work</span>
+      </h1>
+      <div class="divider center"></div>
+      <p class="section-subtitle" style="margin: 0 auto">
+        My 5-day PPL + Upper/Lower split. Each program includes exercises, sets,
+        reps, rest times, and tips from real experience.
+      </p>
+    </div>
+
+    <!-- ══ HOW TO USE ═══════════════════════════════════════════ -->
+    <section class="section section-alt">
+      <div class="section-header center">
+        <p class="section-label">Before You Begin</p>
+        <h2 class="section-title">How to Use These Programs</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fa-solid fa-person-walking"></i>
+          </div>
+          <div class="feature-title">Always Warm Up</div>
+          <p class="feature-desc">
+            Spend 5–10 minutes on light cardio and dynamic stretches before
+            every session. Cold muscles injure easily.
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-stopwatch"></i></div>
+          <div class="feature-title">Respect Rest Times</div>
+          <p class="feature-desc">
+            Rest periods are part of the programme. Too short and you can't
+            perform; too long and you lose intensity.
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <div class="feature-title">Track Your Lifts</div>
+          <p class="feature-desc">
+            Write down every set and weight. Progressive overload — doing more
+            than last time — is how muscles grow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ WORKOUT CARDS ════════════════════════════════════════ -->
+    <section class="section">
+      <div class="section-header">
+        <p class="section-label">The Programs</p>
+        <h2 class="section-title">5-Day Weekly Split</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle" style="margin-bottom: 0">
+          Push · Pull · Legs · Upper · Lower
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1.5rem">
+        <!-- PUSH DAY (Chest & Triceps) -->
+        <div class="workout-card">
+          <div class="workout-card-header">
+            <div class="workout-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <div>
+              <div class="workout-card-title">
+                Day 1 — Push (Chest & Triceps)
+              </div>
+              <div class="workout-card-sub">
+                Push Day · ~60 minutes · Intermediate
+              </div>
+            </div>
+            <div
+              style="
+                margin-left: auto;
+                background: rgba(255, 69, 0, 0.1);
+                border: 1px solid rgba(255, 69, 0, 0.2);
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                font-family: var(--font-sub);
+                font-size: 0.8rem;
+                color: var(--accent);
+              "
+            >
+              Monday
+            </div>
+          </div>
+          <div class="exercise-list">
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Barbell Bench Press
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 6–8</span><span>90s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Incline Dumbbell Press
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10–12</span><span>75s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Cable Chest Flyes
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12–15</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Dips (weighted if
+                possible)
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 8–10</span><span>75s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Tricep Pushdowns (cable)
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12–15</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Skull Crushers (EZ Bar)
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10–12</span><span>60s rest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PULL DAY (Back & Biceps) -->
+        <div class="workout-card">
+          <div class="workout-card-header">
+            <div class="workout-icon">
+              <i class="fa-solid fa-arrows-up-to-line"></i>
+            </div>
+            <div>
+              <div class="workout-card-title">Day 2 — Pull (Back & Biceps)</div>
+              <div class="workout-card-sub">
+                Pull Day · ~65 minutes · Intermediate
+              </div>
+            </div>
+            <div
+              style="
+                margin-left: auto;
+                background: rgba(255, 69, 0, 0.1);
+                border: 1px solid rgba(255, 69, 0, 0.2);
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                font-family: var(--font-sub);
+                font-size: 0.8rem;
+                color: var(--accent);
+              "
+            >
+              Tuesday
+            </div>
+          </div>
+          <div class="exercise-list">
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Conventional Deadlift
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 5</span><span>120s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Wide-Grip Pull-Ups
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 6–10</span><span>90s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Barbell Bent-Over Row
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 8–10</span><span>90s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Seated Cable Row
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Barbell Curl
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10–12</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Hammer Curl (Dumbbell)
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12</span><span>60s rest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEGS DAY -->
+        <div class="workout-card">
+          <div class="workout-card-header">
+            <div class="workout-icon">
+              <i class="fa-solid fa-person-running"></i>
+            </div>
+            <div>
+              <div class="workout-card-title">Day 3 — Legs</div>
+              <div class="workout-card-sub">
+                Lower Body · ~70 minutes · All Levels
+              </div>
+            </div>
+            <div
+              style="
+                margin-left: auto;
+                background: rgba(255, 69, 0, 0.1);
+                border: 1px solid rgba(255, 69, 0, 0.2);
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                font-family: var(--font-sub);
+                font-size: 0.8rem;
+                color: var(--accent);
+              "
+            >
+              Wednesday
+            </div>
+          </div>
+          <div class="exercise-list">
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Barbell Back Squat
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 6–8</span><span>120s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Romanian Deadlift
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10</span><span>90s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Leg Press (Machine)
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12–15</span><span>75s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Walking Lunges
+                (Dumbbells)
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12/leg</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Leg Curl (Machine)
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Standing Calf Raise
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 15–20</span><span>45s rest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPPER DAY (NEW - replaces Full Body) -->
+        <div class="workout-card">
+          <div class="workout-card-header">
+            <div class="workout-icon">
+              <i class="fa-solid fa-person-walking-arrow-right"></i>
+            </div>
+            <div>
+              <div class="workout-card-title">Day 4 — Upper Body</div>
+              <div class="workout-card-sub">
+                Upper Focus · ~60 minutes · Intermediate
+              </div>
+            </div>
+            <div
+              style="
+                margin-left: auto;
+                background: rgba(255, 69, 0, 0.1);
+                border: 1px solid rgba(255, 69, 0, 0.2);
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                font-family: var(--font-sub);
+                font-size: 0.8rem;
+                color: var(--accent);
+              "
+            >
+              Friday
+            </div>
+          </div>
+          <div class="exercise-list">
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Overhead Press (Barbell)
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 6–8</span><span>90s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Weighted Pull-Ups
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 6–8</span><span>90s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Dumbbell Bench Press
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10–12</span><span>75s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Barbell Row
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10</span><span>75s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Lateral Raises
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12–15</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Face Pulls
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 15–20</span><span>60s rest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOWER DAY (NEW - replaces Full Body) -->
+        <div class="workout-card">
+          <div class="workout-card-header">
+            <div class="workout-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <div class="workout-card-title">Day 5 — Lower Body</div>
+              <div class="workout-card-sub">
+                Lower Focus · ~60 minutes · Intermediate
+              </div>
+            </div>
+            <div
+              style="
+                margin-left: auto;
+                background: rgba(255, 69, 0, 0.1);
+                border: 1px solid rgba(255, 69, 0, 0.2);
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                font-family: var(--font-sub);
+                font-size: 0.8rem;
+                color: var(--accent);
+              "
+            >
+              Saturday
+            </div>
+          </div>
+          <div class="exercise-list">
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Front Squat
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 6–8</span><span>90s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Hip Thrusts
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10–12</span><span>75s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Bulgarian Split Squats
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 10/leg</span><span>75s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Leg Extensions
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12–15</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Seated Hamstring Curl
+              </div>
+              <div class="exercise-meta">
+                <span>3 × 12</span><span>60s rest</span>
+              </div>
+            </div>
+            <div class="exercise-item">
+              <div class="exercise-name">
+                <i class="fa-solid fa-circle-dot"></i> Seated Calf Raise
+              </div>
+              <div class="exercise-meta">
+                <span>4 × 15–20</span><span>45s rest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ WEEKLY SCHEDULE OVERVIEW ═══════════════════════════════ -->
+    <section class="section section-alt">
+      <div class="section-header center">
+        <p class="section-label">Weekly Schedule</p>
+        <h2 class="section-title">5-Day Training Week</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="grid-3" style="max-width: 800px; margin: 0 auto">
+        <div class="card" style="padding: 1.5rem; text-align: center">
+          <div
+            style="
+              color: var(--accent);
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            "
+          >
+            Monday
+          </div>
+          <div>Push (Chest/Triceps)</div>
+        </div>
+        <div class="card" style="padding: 1.5rem; text-align: center">
+          <div
+            style="
+              color: var(--accent);
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            "
+          >
+            Tuesday
+          </div>
+          <div>Pull (Back/Biceps)</div>
+        </div>
+        <div class="card" style="padding: 1.5rem; text-align: center">
+          <div
+            style="
+              color: var(--accent);
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            "
+          >
+            Wednesday
+          </div>
+          <div>Legs</div>
+        </div>
+        <div class="card" style="padding: 1.5rem; text-align: center">
+          <div
+            style="
+              color: var(--accent);
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            "
+          >
+            Thursday
+          </div>
+          <div style="color: var(--muted)">Rest / Active Recovery</div>
+        </div>
+        <div class="card" style="padding: 1.5rem; text-align: center">
+          <div
+            style="
+              color: var(--accent);
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            "
+          >
+            Friday
+          </div>
+          <div>Upper Body</div>
+        </div>
+        <div class="card" style="padding: 1.5rem; text-align: center">
+          <div
+            style="
+              color: var(--accent);
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            "
+          >
+            Saturday
+          </div>
+          <div>Lower Body</div>
+        </div>
+        <div class="card" style="padding: 1.5rem; text-align: center">
+          <div
+            style="
+              color: var(--accent);
+              font-weight: bold;
+              margin-bottom: 0.5rem;
+            "
+          >
+            Sunday
+          </div>
+          <div style="color: var(--muted)">Rest</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ RECOVERY TIPS ════════════════════════════════════════ -->
+    <section class="section">
+      <div class="section-header center">
+        <p class="section-label">Recovery</p>
+        <h2 class="section-title">Train Hard. Recover Harder.</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="grid-3">
+        <div class="card" style="padding: 2rem; text-align: center">
+          <div
+            style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <h3 class="card-title" style="font-size: 1.5rem">Sleep 8 Hours</h3>
+          <p class="card-text">
+            Muscle is built while you sleep, not while you lift. 7–9 hours of
+            quality sleep is non-negotiable for recovery and growth hormone
+            release.
+          </p>
+        </div>
+        <div class="card" style="padding: 2rem; text-align: center">
+          <div
+            style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem"
+          >
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3 class="card-title" style="font-size: 1.5rem">Hydrate Daily</h3>
+          <p class="card-text">
+            Aim for 3–4 litres of water on training days. Dehydration reduces
+            strength, focus, and recovery speed significantly.
+          </p>
+        </div>
+        <div class="card" style="padding: 2rem; text-align: center">
+          <div
+            style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem"
+          >
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3 class="card-title" style="font-size: 1.5rem">Rest Days Matter</h3>
+          <p class="card-text">
+            Active recovery — walks, stretching, foam rolling — on off days
+            keeps blood flowing and muscles repairing without added stress.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">LIGHT<span>WEIGHT</span></a>
+          <p>
+            A personal fitness journey shared with the world. Built on iron,
+            fuelled by passion, powered by discipline.
+          </p>
+          <div class="social-links" style="margin-top: 1.2rem">
+            <a
+              href="https://www.instagram.com/accounts/onetap/"
+              class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@mohammedabdurahman7852"
+              class="social-link"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Workouts</h4>
+          <ul>
+            <li><a href="workouts.html">Push Day</a></li>
+            <li><a href="workouts.html">Pull Day</a></li>
+            <li><a href="workouts.html">Legs Day</a></li>
+            <li><a href="workouts.html">Upper/Lower</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nutrition</h4>
+          <ul>
+            <li><a href="nutrition.html">Meal Plans</a></li>
+            <li><a href="nutrition.html">Macros Guide</a></li>
+            <li><a href="nutrition.html">Pre-Workout Meals</a></li>
+            <li><a href="nutrition.html">Healthy Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightweight Fitness. Built with passion &amp; iron.</p>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/accounts/onetap/"
+            class="social-link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@mohammedabdurahman7852"
+            class="social-link"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>

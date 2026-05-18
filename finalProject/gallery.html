@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery — Lightweight Fitness</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏋️</text></svg>"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">LIGHT<span>WEIGHT</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ══ PAGE HERO ════════════════════════════════════════════ -->
+    <div class="page-hero">
+      <p class="section-label" style="position: relative">Visual Fuel</p>
+      <h1
+        class="section-title"
+        style="position: relative; font-size: clamp(3rem, 8vw, 6rem)"
+      >
+        Motivation<br /><span style="color: var(--accent)">Gallery</span>
+      </h1>
+      <div class="divider center"></div>
+      <p class="section-subtitle" style="margin: 0 auto">
+        The gym floor, the iron, the grind — captured. Let every image remind
+        you why you started.
+      </p>
+    </div>
+
+    <!-- ══ PHOTO GALLERY ════════════════════════════════════════ -->
+    <section class="section">
+      <div class="section-header">
+        <p class="section-label">The Iron Life</p>
+        <h2 class="section-title">Gym Sessions & Progress</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item tall">
+          <img
+            src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80"
+            alt="Heavy barbell squat"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Squat Day — 180kg</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80"
+            alt="Gym equipment"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">The Sacred Space</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80"
+            alt="Barbell deadlift"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Pulling Heavy</span>
+          </div>
+        </div>
+
+        <div class="gallery-item wide">
+          <img
+            src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?w=900&q=80"
+            alt="Leg press machine"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Leg Day Never Skipped</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+            alt="Dumbbell row"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Back Building</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80"
+            alt="Pullup bars"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Pull-Up PRs</span>
+          </div>
+        </div>
+
+        <div class="gallery-item tall">
+          <img
+            src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80"
+            alt="Gym motivational"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Early Morning Sessions</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80"
+            alt="Kettlebell training"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Kettlebell Conditioning</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1549476464-37392f717541?w=600&q=80"
+            alt="Cable machine"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Cable Isolation Work</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ BEFORE/AFTER SECTION ════════════════════════════════ -->
+    <section class="section section-alt">
+      <div class="section-header center">
+        <p class="section-label">Transformation</p>
+        <h2 class="section-title">The Journey in Numbers</h2>
+        <div class="divider center"></div>
+        <p class="section-subtitle" style="margin: 0 auto">
+          Real progress, real data, real commitment. Four years of tracking what
+          matters.
+        </p>
+      </div>
+      <div class="grid-4">
+        <div class="about-stat" style="padding: 2rem">
+          <div class="about-stat-num"><span data-count="22">0</span>kg</div>
+          <div class="about-stat-label">Body Fat Lost</div>
+        </div>
+        <div class="about-stat" style="padding: 2rem">
+          <div class="about-stat-num"><span data-count="18">0</span>kg</div>
+          <div class="about-stat-label">Muscle Gained</div>
+        </div>
+        <div class="about-stat" style="padding: 2rem">
+          <div class="about-stat-num"><span data-count="140">0</span>kg</div>
+          <div class="about-stat-label">Bench Press PR</div>
+        </div>
+        <div class="about-stat" style="padding: 2rem">
+          <div class="about-stat-num"><span data-count="200">0</span>kg</div>
+          <div class="about-stat-label">Deadlift PR</div>
+        </div>
+      </div>
+
+      <!-- Progress bar visual -->
+      <div
+        style="
+          margin-top: 3rem;
+          background: var(--card);
+          border: 1px solid var(--border);
+          border-radius: var(--radius);
+          padding: 2.5rem;
+        "
+      >
+        <p class="section-label" style="margin-bottom: 1.5rem">
+          Strength Progress Over 4 Years
+        </p>
+
+        <div style="margin-bottom: 1.5rem">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 0.4rem;
+            "
+          >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--text);
+              "
+              >Bench Press</span
+            >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--accent);
+              "
+              >140kg</span
+            >
+          </div>
+          <div
+            style="
+              background: var(--bg3);
+              border-radius: 2px;
+              height: 8px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: var(--accent);
+                height: 100%;
+                width: 78%;
+                border-radius: 2px;
+                transition: width 1s ease;
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 0.4rem;
+            "
+          >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--text);
+              "
+              >Squat</span
+            >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--accent);
+              "
+              >180kg</span
+            >
+          </div>
+          <div
+            style="
+              background: var(--bg3);
+              border-radius: 2px;
+              height: 8px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: var(--accent);
+                height: 100%;
+                width: 90%;
+                border-radius: 2px;
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 0.4rem;
+            "
+          >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--text);
+              "
+              >Deadlift</span
+            >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--accent);
+              "
+              >200kg</span
+            >
+          </div>
+          <div
+            style="
+              background: var(--bg3);
+              border-radius: 2px;
+              height: 8px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: var(--accent);
+                height: 100%;
+                width: 95%;
+                border-radius: 2px;
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 0.4rem;
+            "
+          >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--text);
+              "
+              >Overhead Press</span
+            >
+            <span
+              style="
+                font-family: var(--font-sub);
+                font-size: 0.85rem;
+                color: var(--accent);
+              "
+              >90kg</span
+            >
+          </div>
+          <div
+            style="
+              background: var(--bg3);
+              border-radius: 2px;
+              height: 8px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: var(--accent);
+                height: 100%;
+                width: 60%;
+                border-radius: 2px;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ INSPIRATIONAL QUOTES ════════════════════════════════ -->
+    <section class="section">
+      <div class="section-header center">
+        <p class="section-label">Words of Iron</p>
+        <h2 class="section-title">Quotes That Keep Me Going</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p>The only bad workout is the one that didn't happen.</p>
+          <cite>— Gym Wisdom</cite>
+        </div>
+        <div class="quote-card">
+          <p>
+            Suffer the pain of discipline, or suffer the pain of regret. Your
+            choice.
+          </p>
+          <cite>— Jim Rohn</cite>
+        </div>
+        <div class="quote-card">
+          <p>
+            Champions aren't made in gyms. Champions are made from something
+            deep inside them — a desire, a dream, a vision.
+          </p>
+          <cite>— Muhammad Ali</cite>
+        </div>
+        <div class="quote-card">
+          <p>
+            The iron never lies to you. You can walk outside and listen to all
+            kinds of talk, but the iron never flatters you.
+          </p>
+          <cite>— Henry Rollins</cite>
+        </div>
+        <div class="quote-card">
+          <p>
+            Pain is temporary. Quitting lasts forever. Every time you want to
+            quit, remember why you started.
+          </p>
+          <cite>— Arnold Schwarzenegger</cite>
+        </div>
+        <div class="quote-card">
+          <p>
+            Strength does not come from winning. Your struggles develop your
+            strengths. When you go through hardships and don't surrender, that
+            is strength.
+          </p>
+          <cite>— Arnold Schwarzenegger</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">LIGHT<span>WEIGHT</span></a>
+          <p>
+            A personal fitness journey shared with the world. Built on iron,
+            fuelled by passion, powered by discipline.
+          </p>
+          <div class="social-links" style="margin-top: 1.2rem">
+            <a
+              href="https://www.instagram.com/accounts/onetap/"
+              class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@mohammedabdurahman7852"
+              class="social-link"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Workouts</h4>
+          <ul>
+            <li><a href="workouts.html">Chest & Triceps</a></li>
+            <li><a href="workouts.html">Back & Biceps</a></li>
+            <li><a href="workouts.html">Leg Day</a></li>
+            <li><a href="workouts.html">Upper Body</a></li>
+            <li><a href="workouts.html">Lower Body</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nutrition</h4>
+          <ul>
+            <li><a href="nutrition.html">Meal Plans</a></li>
+            <li><a href="nutrition.html">Macros Guide</a></li>
+            <li><a href="nutrition.html">Pre-Workout Meals</a></li>
+            <li><a href="nutrition.html">Healthy Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightweight Fitness. Built with passion &amp; iron.</p>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/accounts/onetap/"
+            class="social-link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@mohammedabdurahman7852"
+            class="social-link"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
